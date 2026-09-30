@@ -1,61 +1,34 @@
-# 🌐 Repositori Mata Kuliah Teknologi IoT
+# 🌐 Repositori Hasil Tugas Teknologi IoT
 
-Repositori resmi untuk pengelolaan tugas, pengumpulan project akhir, dan arsip laporan perkuliahan mata kuliah **Teknologi IoT**.
+Repositori ini berisi dokumentasi, *source code*, dan laporan hasil pengerjaan tugas serta project untuk mata kuliah **Teknologi IoT**.
 
 ---
 
-## 📂 Struktur Direktori
+## 📂 Struktur Repositori
 
 ```text
 .
-├── Kelas_A/       # Folder pengumpulan project & tugas Kelas A
-├── Kelas_B/       # Folder pengumpulan project & tugas Kelas B
-├── Laporan/       # Folder arsip laporan resmi dan dokumen pendukung
-├── .gitignore     # Pengaturan pengabaian file build/cache
-└── README.md      # Panduan utama repositori
+├── Kelas_A/       # Hasil project dan tugas Kelas A
+├── Kelas_B/       # Hasil project dan tugas Kelas B
+├── Laporan/       # Berkas laporan resmi dan dokumentasi
+├── .gitignore     # Konfigurasi pengabaian file build/cache
+└── README.md      # Ringkasan repositori
+📌 Deskripsi Direktori
+Kelas_A/ : Berisi source code dan file proyek IoT yang dikerjakan oleh Kelas A.
 
-```
+Kelas_B/ : Berisi source code dan file proyek IoT yang dikerjakan oleh Kelas B.
 
----
+Laporan/ : Berisi arsip laporan hasil pengujian, analisis, dan dokumentasi proyek.
 
-## 📌 Panduan Direktori
+🛠️ Teknologi & Tools
+Mikrokontroler: ESP32 / ESP32-S3
 
-* **`Kelas_A/`** : Direktori penyimpanan tugas individu dan kelompok mahasiswa Kelas A.
-* **`Kelas_B/`** : Direktori penyimpanan tugas individu dan kelompok mahasiswa Kelas B.
-* **`Laporan/`** : Tempat pengumpulan berkas laporan dalam format PDF.
+Bahasa Pemrograman: Rust (esp-idf-sys, embuild) / C++
 
----
+Pembangunan & Toolchain: Cargo, espflash, Git
 
-## ⚠️ Ketentuan Pengumpulan Project
+💡 Catatan Pemeliharaan Repositori
+Untuk menjaga ukuran repositori tetap ringan, seluruh project Rust/ESP32 di dalam repositori ini telah dibersihkan dari folder build (target/ dan .embuild/) menggunakan perintah:
 
-### 1. Format Penamaan Folder
-
-Setiap pengunggahan tugas di folder `Kelas_A/` maupun `Kelas_B/` menggunakan format penamaan berikut:
-
-* **Tugas Individu:** `NIM_Nama-Lengkap`
-*Contoh:* `2042241001_Ahmad_Fauzi`
-* **Tugas Kelompok:** `Kelompok_Nomor_Nama-Project`
-*Contoh:* `Kelompok_01_Smart_Monitoring_Suhu`
-
-### 2. Bebas File Build & Cache
-
-Untuk menjaga ukuran repositori tetap ringan, **WAJIB** membersihkan folder hasil kompilasi (seperti `target/` atau `.embuild/`) sebelum melakukan pengunggahan atau *commit*.
-
-Untuk project berbasis Rust, jalankan perintah berikut di terminal sebelum membuat file kompresi atau upload:
-
-```powershell
+PowerShell
 cargo clean
-
-```
-
----
-
-## 🛠️ Lingkungan Pengembangan
-
-* **Mikrokontroler:** ESP32 / ESP32-S3
-* **Bahasa & Framework:** Rust (`esp-idf-sys`, `embuild`) / C++
-* **Tools:** Cargo, `espflash`, Git
-
-```
-
-```
