@@ -1,9 +1,6 @@
-Berikut adalah isi file README.md utama (root) yang sudah disesuaikan tanpa menyebutkan asisten laboratorium/praktikum. Kamu bisa langsung menyalin (copy-paste) seluruh kode di bawah ini ke dalam file README.md utama repositorimu:
-
-Markdown
 # 🌐 Repositori Mata Kuliah Teknologi IoT
 
-Selamat datang di repositori resmi mata kuliah **Teknologi IoT**. Repositori ini digunakan sebagai pusat pengumpulan tugas, project perkuliahan, serta laporan resmi mahasiswa selama semester berjalan.
+Repositori resmi untuk pengelolaan tugas, pengumpulan project akhir, dan arsip laporan perkuliahan mata kuliah **Teknologi IoT**.
 
 ---
 
@@ -11,40 +8,54 @@ Selamat datang di repositori resmi mata kuliah **Teknologi IoT**. Repositori ini
 
 ```text
 .
-├── Kelas_A/       # Folder pengumpulan project & tugas mahasiswa Kelas A
-├── Kelas_B/       # Folder pengumpulan project & tugas mahasiswa Kelas B
+├── Kelas_A/       # Folder pengumpulan project & tugas Kelas A
+├── Kelas_B/       # Folder pengumpulan project & tugas Kelas B
 ├── Laporan/       # Folder arsip laporan resmi dan dokumen pendukung
-├── .gitignore     # Daftar file/folder yang diabaikan oleh Git
+├── .gitignore     # Pengaturan pengabaian file build/cache
 └── README.md      # Panduan utama repositori
-📌 Panduan Penggunaan Direktori
-Kelas_A/ : Khusus penyimpan tugas individu maupun kelompok mahasiswa Kelas A.
 
-Kelas_B/ : Khusus penyimpan tugas individu maupun kelompok mahasiswa Kelas B.
+```
 
-Laporan/ : Tempat pengumpulan file laporan resmi (format PDF) dari tiap tugas atau project.
+---
 
-⚠️ Aturan Pengumpulan Project (PENTING!)
-1. Format Penamaan Folder
-Setiap pengunggahan tugas di folder Kelas_A/ maupun Kelas_B/ wajib mengikuti format berikut:
+## 📌 Panduan Direktori
 
-Tugas Individu: [NIM]_[Nama-Lengkap]
+* **`Kelas_A/`** : Direktori penyimpanan tugas individu dan kelompok mahasiswa Kelas A.
+* **`Kelas_B/`** : Direktori penyimpanan tugas individu dan kelompok mahasiswa Kelas B.
+* **`Laporan/`** : Tempat pengumpulan berkas laporan dalam format PDF.
 
-Contoh: 2042241001_Ahmad_Fauzi
+---
 
-Tugas Kelompok: Kelompok_[Nomor]_[Nama-Project]
+## ⚠️ Ketentuan Pengumpulan Project
 
-Contoh: Kelompok_01_Smart_Monitoring_Suhu
+### 1. Format Penamaan Folder
 
-2. Bebas File Build / Cache (Penting untuk Project Rust/ESP32)
-Untuk mencegah ukuran repositori membengkak akibat file kompilasi (seperti folder target/ atau .embuild/), WAJIB menjalankan perintah pembersihan sebelum commit/upload:
+Setiap pengunggahan tugas di folder `Kelas_A/` maupun `Kelas_B/` menggunakan format penamaan berikut:
 
-PowerShell
+* **Tugas Individu:** `NIM_Nama-Lengkap`
+*Contoh:* `2042241001_Ahmad_Fauzi`
+* **Tugas Kelompok:** `Kelompok_Nomor_Nama-Project`
+*Contoh:* `Kelompok_01_Smart_Monitoring_Suhu`
+
+### 2. Bebas File Build & Cache
+
+Untuk menjaga ukuran repositori tetap ringan, **WAJIB** membersihkan folder hasil kompilasi (seperti `target/` atau `.embuild/`) sebelum melakukan pengunggahan atau *commit*.
+
+Untuk project berbasis Rust, jalankan perintah berikut di terminal sebelum membuat file kompresi atau upload:
+
+```powershell
 cargo clean
-Catatan: Jangan mengunggah folder target/ atau file ZIP yang berisi folder build. Ukuran project yang bersih hanya berukuran beberapa Kilobyte/Megabyte.
 
-🛠️ Teknologi & Environment
-Mikrokontroler: ESP32 / ESP32-S3
+```
 
-Bahasa & Framework: Rust (esp-idf-sys, embuild) / C++
+---
 
-Tools: Cargo, espflash, Git
+## 🛠️ Lingkungan Pengembangan
+
+* **Mikrokontroler:** ESP32 / ESP32-S3
+* **Bahasa & Framework:** Rust (`esp-idf-sys`, `embuild`) / C++
+* **Tools:** Cargo, `espflash`, Git
+
+```
+
+```
